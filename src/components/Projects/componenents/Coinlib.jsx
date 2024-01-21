@@ -1,14 +1,15 @@
 import React from "react";
+import logo from "../../../assets/coinlib.svg";
 
 const ExperienceCoinlib = () => {
   return (
-    <div className="bg-white text-gray-800 p-6 md:p-12 rounded-lg shadow-md">
+    <div className="bg-white text-gray-800 p-8 my-24  rounded-lg shadow-md">
       <div className="flex items-center mb-6">
         <a href="https://coinlib.io/" target="_blank" rel="noreferrer">
           <img
-            src={`${process.env.REACT_APP_BASE_URL}/assets/coinlib.svg`}
+            src={logo}
             alt="Coinlib Logo"
-            className="w-40 b rounded bg-black mr-3 border-4"
+            className="w-40 p-2 bg-black mr-3 border-4"
           />
         </a>
         <div>

@@ -6,7 +6,7 @@ const HomePage = () => {
     <div
       className="relative h-screen bg-no-repeat bg-cover bg-center "
       style={{
-        backgroundImage: `url('{${process.env.REACT_APP_BASE_URL}/assets/hero.png`,
+        backgroundImage: `url{${process.env.REACT_APP_BASE_URL}/assets/hero.png)`,
       }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-50">

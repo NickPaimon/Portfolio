@@ -6,12 +6,15 @@ import ExperienceCoinlib from "./componenents/Coinlib";
 const Projects = () => {
   return (
     <div id="projects">
-      <p className="text-3xl font-bold text-black mt-8 text-center">
-        Lastest projects
-      </p>
-      <ExperienceEnvestnet />
-      <ExperiencePicit />
-      <ExperienceCoinlib />
+      <div className="px-40 h-100 pt-24">
+        <p className="text-4xl font-bold text-black top-12 text-center">
+          Lastest projects
+        </p>
+        <ExperienceEnvestnet />
+        <ExperiencePicit />
+        <ExperienceCoinlib />
+        <div className="h-16"></div>
+      </div>
     </div>
   );
 };

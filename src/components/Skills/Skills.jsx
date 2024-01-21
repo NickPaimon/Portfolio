@@ -30,13 +30,13 @@ const Skills = () => {
   ];
 
   return (
-    <section
-      className="bg-gray-900 text-white py-12"
+    <div
+      className="bg-gray-900 text-white py-24 px-48"
       id="skills"
       ref={skillRef}
     >
       <div className="container mx-auto px-6 md:px-12">
-        <h2 className="text-3xl font-bold mb-6 text-center md:text-left">
+        <h2 className="text-4xl font-bold mb-12 text-center">
           Professional Skills
         </h2>
         <div className="space-y-4">
@@ -50,7 +50,7 @@ const Skills = () => {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

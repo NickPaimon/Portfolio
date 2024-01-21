@@ -3,8 +3,8 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
-    <nav className="bg-gray-800 text-white shadow-lg">
-      <div className="container mx-auto px-4 py-2 flex justify-between items-center">
+    <nav className="bg-gray-800 text-white shadow-lg px-40">
+      <div className="container mx-auto px-6 py-3 flex justify-between items-center">
         <div
           onClick={() => window.location.reload()}
           className="flex items-center justify-center border border-white rounded-full h-12 w-12 overflow-hidden cursor-pointer"

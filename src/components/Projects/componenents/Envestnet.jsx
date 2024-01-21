@@ -2,13 +2,13 @@ import React from "react";
 
 const ExperienceEnvestnet = () => {
   return (
-    <div className="bg-white text-gray-800 p-6 md:p-12">
+    <div className="bg-white text-gray-800 p-8 my-24 shadow-md">
       <div className="flex items-center mb-6">
         <a href="https://www.envestnet.com/" target="_blank" rel="noreferrer">
           <img
             src={`${process.env.REACT_APP_BASE_URL}/assets/envestnet.png`}
             alt="Envestnet Logo"
-            className="mr-4 w-36 bg-black rounded-md cursor-pointer"
+            className="mr-4 w-36 px-2 py-1 bg-black cursor-pointer"
           />
         </a>
         <div>

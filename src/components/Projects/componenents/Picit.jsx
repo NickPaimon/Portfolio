@@ -2,7 +2,7 @@ import React from "react";
 
 const ExperiencePicit = () => {
   return (
-    <div className="bg-white text-gray-800 p-6 md:p-12">
+    <div className="bg-white text-gray-800 p-8 my-24 shadow-md">
       <div className="flex items-center mb-6">
         <a
           href="https://appstor.io/go/appstore/649082204"
@@ -12,7 +12,7 @@ const ExperiencePicit = () => {
           <img
             src={`${process.env.REACT_APP_BASE_URL}/assets/picit.png`}
             alt="Picit Logo"
-            className="mr-4 w-16 rounded-md cursor-pointer"
+            className="mr-4 p-1 w-16 r cursor-pointer"
           />
         </a>
 
