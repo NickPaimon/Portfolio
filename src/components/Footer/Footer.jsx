@@ -3,10 +3,10 @@ import React from "react";
 const Footer = () => {
   return (
     <div
-      className="bg-gray-900 text-white text-center md:px-36 sm:px-24 px-12 border-2 border-slate-700"
+      className=" bg-gray-900  text-white text-center md:px-36 sm:px-24 px-12  font-roboto"
       id="contact"
     >
-      <div className="flex justify-around items-center p-12">
+      <div className="flex justify-around items-center p-12 space-y-4 md:space-y-0">
         <img
           src={`${process.env.REACT_APP_BASE_URL || "."}/assets/photo.jpg`}
           alt="Mykola Pecheniuk"

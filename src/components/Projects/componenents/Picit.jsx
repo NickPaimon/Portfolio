@@ -2,8 +2,8 @@ import React from "react";
 
 const ExperiencePicit = () => {
   return (
-    <div className="bg-white text-gray-800 md:p-8  sm:p-6 p-4 md:my-24 sm:my-18 my-12 shadow-md">
-      <div className="flex justify-betweem items-center mb-6">
+    <div className="bg-white text-gray-800 md:p-8 sm:p-6 p-4 md:my-24 sm:my-18 my-12 shadow-md font-roboto">
+      <div className="flex justify-around items-center mb-6">
         <a
           href="https://appstor.io/go/appstore/649082204"
           target="_blank"
@@ -12,10 +12,9 @@ const ExperiencePicit = () => {
           <img
             src={`${process.env.REACT_APP_BASE_URL}/assets/picit.png`}
             alt="Picit Logo"
-            className="md:w-16 sm:w-12 w-8 cursor-pointer"
+            className="md:w-18 sm:w-16 w-12 px-2 py-1 bg-black cursor-pointer"
           />
         </a>
-
         <div className="px-2">
           <h3 className="md:text-2xl sm:text-lg text-base font-semibold">
             Picit | React Native Developer
@@ -25,7 +24,7 @@ const ExperiencePicit = () => {
           </p>
         </div>
       </div>
-      <ul className="list-disc pl-5 space-y-2 md:text-lg sm:text-sm text-xs">
+      <ul className="list-disc pl-5 space-y-4 md:text-lg sm:text-sm text-xs">
         <li>
           Tasked with leading the development of Picit from its conceptual
           architecture all the way to deployment.
