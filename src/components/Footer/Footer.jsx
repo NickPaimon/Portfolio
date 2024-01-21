@@ -7,7 +7,7 @@ const Footer = () => {
         <hr className="border-gray-700 mb-4" />
         <div className="flex justify-center items-center flex-col md:flex-row">
           <img
-            src="assets/photo.jpg"
+            src={`${process.env.REACT_APP_BASE_URL}/assets/photo.jpg`}
             alt="Mykola Pecheniuk"
             className="rounded-full h-20 w-20 border-2 border-gray-400 object-cover mb-4 md:mb-0 md:mr-4"
           />

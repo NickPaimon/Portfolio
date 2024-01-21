@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "assets/coinlib.svg";
+import Logo from "./assets/coinlib.svg";
 
 const ExperienceCoinlib = () => {
   return (
@@ -7,7 +7,7 @@ const ExperienceCoinlib = () => {
       <div className="flex items-center mb-6">
         <a href="https://coinlib.io/" target="_blank" rel="noreferrer">
           <img
-            src={Logo}
+            src={`${process.env.REACT_APP_BASE_URL}/assets/coinlib.svg`}
             alt="Coinlib Logo"
             className="w-40 b rounded bg-black mr-3 border-4"
           />
