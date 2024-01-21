@@ -3,25 +3,25 @@ import logo from "../../../assets/coinlib.svg";
 
 const ExperienceCoinlib = () => {
   return (
-    <div className="bg-white text-gray-800 p-8 my-24  rounded-lg shadow-md">
-      <div className="flex items-center mb-6">
+    <div className="bg-white text-gray-800 md:p-8  sm:p-6 p-4 md:my-24 sm:my-18 my-12 shadow-md">
+      <div className="flex justify-betweem items-center mb-6">
         <a href="https://coinlib.io/" target="_blank" rel="noreferrer">
           <img
             src={logo}
             alt="Coinlib Logo"
-            className="w-40 p-2 bg-black mr-3 border-4"
+            className="md:w-40 sm:w-30 w-20 p-2 bg-black border-4"
           />
         </a>
-        <div>
-          <h3 className="text-2xl font-semibold">
+        <div className="px-2">
+          <h3 className="md:text-2xl sm:text-lg text-base font-semibold">
             Coinlib | React Native Developer
           </h3>
-          <p className="text-md text-gray-500">
+          <p className="md:text-lg ms:text-base text-sm text-gray-500">
             Duration: 6 months | Team Size: 11 members
           </p>
         </div>
       </div>
-      <ul className="list-disc pl-5 space-y-2">
+      <ul className="list-disc pl-5 space-y-2 md:text-lg sm:text-sm text-xs">
         <li>
           Concentrated on front-end development with React Native, adding new
           features that enhanced the overall user experience.

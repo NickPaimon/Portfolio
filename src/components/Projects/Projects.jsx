@@ -6,9 +6,8 @@ import ExperienceCoinlib from "./componenents/Coinlib";
 const Projects = () => {
   return (
     <div id="projects">
-      <div className="sm:px-40 px-10 h-100 sm:pt-24 pt-12">
-        <p className="sm:text-4xl md: text-2xl font-bold text-black sm:top-12 top-8 text-center">
-          {console.log("dadadaddas")}
+      <div className="md:px-30 sm:px-15 px-10 h-100 sm:pt-24 pt-12">
+        <p className="md:text-4xl sm:text-3xl text-2xl font-bold text-black md:top-12 sm:top-8 top-5 text-center">
           Lastest projects
         </p>
         <ExperienceEnvestnet />
