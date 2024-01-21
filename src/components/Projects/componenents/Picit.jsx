@@ -20,7 +20,7 @@ const ExperiencePicit = () => {
           <h3 className="md:text-2xl sm:text-lg text-base font-semibold">
             Picit | React Native Developer
           </h3>
-          <p className="md:text-lg ms:text-base text-sm text-gray-500">
+          <p className="md:text-lg sm:text-base text-sm text-gray-500">
             Duration: 7 months | Team Size: 5 members
           </p>
         </div>

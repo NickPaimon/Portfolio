@@ -16,7 +16,7 @@ const ExperienceCoinlib = () => {
           <h3 className="md:text-2xl sm:text-lg text-base font-semibold">
             Coinlib | React Native Developer
           </h3>
-          <p className="md:text-lg ms:text-base text-sm text-gray-500">
+          <p className="md:text-lg sm:text-base text-sm text-gray-500">
             Duration: 6 months | Team Size: 11 members
           </p>
         </div>
