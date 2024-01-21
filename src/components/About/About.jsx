@@ -35,7 +35,7 @@ const Aboutme = () => {
           <p className="md:text-xl sm:text-lg text-base">
             Email: snegovik3500@gmail.com | Phone: +380 (66) 678-58-59
           </p>
-          <p className="md:text-xl sm:text-lg text-base mb-36 sm:mb-30 sm:mb-24 mb-12">
+          <p className="md:text-xl sm:text-lg text-base mb-36 sm:mb-30 sm:mb-24">
             Explore my work on{" "}
             <a
               href="https://github.com/NickPaimon"
