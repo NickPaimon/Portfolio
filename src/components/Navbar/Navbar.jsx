@@ -9,7 +9,7 @@ const Navbar = () => {
           onClick={() => window.location.reload()}
           className="flex items-center justify-center border border-white rounded-full h-12 w-12 overflow-hidden cursor-pointer"
         >
-          <img src="../../assets/logo.png" alt="Logo" className="h-12" />{" "}
+          <img src="assets/logo.png" alt="Logo" className="h-12" />{" "}
         </div>
         <div className="flex">
           <Link

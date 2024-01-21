@@ -6,7 +6,7 @@ const ExperienceEnvestnet = () => {
       <div className="flex items-center mb-6">
         <a href="https://www.envestnet.com/" target="_blank" rel="noreferrer">
           <img
-            src="../../../assets/envestnet.png"
+            src="assets/envestnet.png"
             alt="Envestnet Logo"
             className="mr-4 w-36 bg-black rounded-md cursor-pointer"
           />
