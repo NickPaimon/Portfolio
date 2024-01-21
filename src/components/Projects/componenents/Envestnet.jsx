@@ -8,7 +8,7 @@ const ExperienceEnvestnet = () => {
           <img
             src={`${process.env.REACT_APP_BASE_URL}/assets/envestnet.png`}
             alt="Envestnet Logo"
-            className="mr-4 w-36 px-2 py-1 bg-black cursor-pointer"
+            className="mr-4 w-36 px-2 py-1 bg-black  cursor-pointer"
           />
         </a>
         <div>

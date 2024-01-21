@@ -3,48 +3,27 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
-    <nav className="bg-gray-800 text-white shadow-lg px-40">
-      <div className="container mx-auto px-6 py-3 flex justify-between items-center">
+    <nav className="bg-gray-800 text-white shadow-lg ">
+      <div className="container mx-auto sm:px-6 py-3 flex justify-around items-center px-2 sm:text-sm text-xs">
         <div
           onClick={() => window.location.reload()}
-          className="flex items-center justify-center border border-white rounded-full h-12 w-12 overflow-hidden cursor-pointer"
+          className="flex items-center justify-center border border-white rounded-full sm:h-12 sm:w-12 w-6 h-6 overflow-hidden cursor-pointer"
         >
           <img
-            src={`${process.env.REACT_APP_BASE_URL}/assets/logo.png`}
+            src={`${process.env.REACT_APP_BASE_URL || "."}/assets/logo.png`}
             alt="Logo"
-            className="h-12"
           />{" "}
         </div>
         <div className="flex">
-          <Link
-            to="skills"
-            smooth={true}
-            className="px-4 hover:text-blue-300 cursor-pointer"
-          >
-            Skills
-          </Link>
-
-          <Link
-            to="projects"
-            smooth={true}
-            className="px-4 hover:text-blue-300 cursor-pointer"
-          >
-            Projects
-          </Link>
-          <Link
-            to="about"
-            smooth={true}
-            className="px-4 hover:text-blue-300 cursor-pointer"
-          >
-            About
-          </Link>
-          <Link
-            to="contact"
-            smooth={true}
-            className="px-4 hover:text-blue-300 cursor-pointer"
-          >
-            Contact
-          </Link>
+          {["skills", "projects", "about", "contact"].map((el) => (
+            <Link
+              to={el}
+              smooth={true}
+              className="px-2 sm:px-4  hover:text-blue-300 cursor-pointer "
+            >
+              {`${el[0].toUpperCase() + el.substring(1)}`}
+            </Link>
+          ))}
         </div>
       </div>
     </nav>

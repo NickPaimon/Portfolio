@@ -31,12 +31,12 @@ const Skills = () => {
 
   return (
     <div
-      className="bg-gray-900 text-white py-24 px-48"
+      className="bg-gray-900 text-white py-24 ms:px-48 px-8"
       id="skills"
       ref={skillRef}
     >
-      <div className="container mx-auto px-6 md:px-12">
-        <h2 className="text-4xl font-bold mb-12 text-center">
+      <div className="container mx-auto px-6 ms:px-12">
+        <h2 className="ms:text-4xl text-2xl font-bold mb-12 text-center">
           Professional Skills
         </h2>
         <div className="space-y-4">
