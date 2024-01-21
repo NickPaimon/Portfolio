@@ -2,8 +2,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-gray-900 text-white text-center px-44" id="contact">
-      <hr className="border-gray-700" />
+    <div
+      className="bg-gray-900 text-white text-center md:px-36 sm:px-24 px-12 border-2 border-slate-700"
+      id="contact"
+    >
       <div className="flex justify-around items-center p-12">
         <img
           src={`${process.env.REACT_APP_BASE_URL || "."}/assets/photo.jpg`}
