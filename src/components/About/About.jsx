@@ -2,7 +2,10 @@ import React from "react";
 
 const Aboutme = () => {
   return (
-    <div className="bg-white text-gray-800 md:p-8 sm:p-6 p-4 md:my-24 sm:my-18 my-12 shadow-md font-roboto">
+    <div
+      id="about"
+      className="bg-white text-gray-800 md:p-8 sm:p-6 p-4 md:my-24 sm:my-18 my-12 shadow-md font-roboto"
+    >
       <div className="container mx-auto">
         <div className="mb-36 sm:mb-30">
           <h2 className="md:text-3xl sm:text-2xl text-xl text-center font-semibold mb-12">

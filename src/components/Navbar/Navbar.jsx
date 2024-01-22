@@ -19,7 +19,7 @@ const Navbar = () => {
             <Link
               to={el}
               smooth={true}
-              offset={el === "skills" ? -70 : 0}
+              offset={el === "skills" || el === "about" ? -70 : 0}
               className="px-2 sm:px-4  hover:text-gray-500 cursor-pointer "
             >
               {`${el[0].toUpperCase() + el.substring(1)}`}
