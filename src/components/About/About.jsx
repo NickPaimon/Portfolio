@@ -4,14 +4,14 @@ const Aboutme = () => {
   return (
     <div
       id="about"
-      className="bg-white text-gray-800 md:p-8 sm:p-6 p-4 md:my-24 sm:my-18 my-12 shadow-md font-roboto"
+      className="bg-white text-gray-800 md:p-8 sm:p-6 p-4 md:mt-24 sm:mt-18 mt-12 shadow-md font-roboto"
     >
       <div className="container mx-auto">
-        <div className="mb-36 sm:mb-30">
+        <div className="mb-12">
           <h2 className="md:text-3xl sm:text-2xl text-xl text-center font-semibold mb-12">
             Technical Skills
           </h2>
-          <p className="md:text-xl sm:text-lg text-base mb-36 sm:mb-30">
+          <p className="md:text-xl sm:text-lg text-base mb-12">
             Specializing in React, React Native, Redux, and Redux Toolkit, my
             expertise extends to HTML5, CSS3, JavaScript, TypeScript, Typeorm,
             MySQL, and Nest.js. Skilled in Git and Firebase for version control
@@ -20,25 +20,25 @@ const Aboutme = () => {
           </p>
         </div>
         <hr className="border-gray-700 mb-10" />
-        <div className="mb-36 sm:mb-30">
+        <div className="mb-12 ">
           <h2 className="md:text-3xl sm:text-2xl text-xl text-center font-semibold mb-12">
             Project Highlights
           </h2>
-          <p className="md:text-xl sm:text-lg text-base mb-36 sm:mb-30">
+          <p className="md:text-xl sm:text-lg text-base mb-12">
             My portfolio includes significant roles in projects like Envestnet,
             Picit, Coinlib, and Performa, showcasing my ability to lead and
             innovate in diverse development scenarios.
           </p>
         </div>
         <hr className="border-gray-700 mb-10" />
-        <div className="mb-36 sm:mb-30">
+        <div className="mb-12">
           <h2 className="md:text-3xl sm:text-2xl text-xl text-center font-semibold mb-12">
             Connect with Me
           </h2>
           <p className="md:text-xl sm:text-lg text-base">
             Email: snegovik3500@gmail.com | Phone: +380 (66) 678-58-59
           </p>
-          <p className="md:text-xl sm:text-lg text-base mb-36 sm:mb-30 sm:mb-24">
+          <p className="md:text-xl sm:text-lg text-base">
             Explore my work on{" "}
             <a
               href="https://github.com/NickPaimon"

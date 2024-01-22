@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
-    <nav className="fixed w-full bg-white bg-opacity-80 text-black shadow-lg border-2 border-gray-200 backdrop-filter backdrop-blur-lg z-10">
+    <nav className="fixed w-full backdrop-blur-lg bg-gray-900 bg-opacity-90 text-black shadow-lg  backdrop-filter border-b border-gray-500 z-10">
       <div className="container mx-auto sm:px-6 py-3 flex justify-around items-center px-2 sm:text-sm text-xs">
         <div
           onClick={() => window.location.reload()}
@@ -20,7 +20,7 @@ const Navbar = () => {
               to={el}
               smooth={true}
               offset={el === "skills" || el === "about" ? -70 : 0}
-              className="px-2 sm:px-4  hover:text-gray-500 cursor-pointer "
+              className="px-2 sm:px-4 text-white hover:text-blue-300 cursor-pointer "
             >
               {`${el[0].toUpperCase() + el.substring(1)}`}
             </Link>
