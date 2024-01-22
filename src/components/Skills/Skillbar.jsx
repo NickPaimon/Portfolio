@@ -28,7 +28,6 @@ const SkillBar = ({ skill, level, startAnimation, id }) => {
     NestJS: logo8,
     Typeorm: logo9,
     MySQL: logo10,
-    // other skills...
   };
   return (
     <div
