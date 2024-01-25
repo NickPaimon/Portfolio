@@ -4,7 +4,7 @@ const Aboutme = () => {
   return (
     <div
       id="about"
-      className="bg-white text-gray-800 md:p-8 sm:p-6 p-4 md:mt-24 sm:mt-18 mt-12 shadow-md font-roboto"
+      className="bg-white text-gray-800 px-4 p-12  shadow-md font-roboto border-t border-gray-500"
     >
       <div className="container mx-auto">
         <div className="mb-12">
@@ -38,7 +38,7 @@ const Aboutme = () => {
           <p className="md:text-xl sm:text-lg text-base">
             Email: snegovik3500@gmail.com | Phone: +380 (66) 678-58-59
           </p>
-          <p className="md:text-xl sm:text-lg text-base">
+          <p className="md:text-xl sm:text-lg text-base ">
             Explore my work on{" "}
             <a
               href="https://github.com/NickPaimon"
@@ -52,7 +52,7 @@ const Aboutme = () => {
             <a
               href="https://www.upwork.com/freelancers/~011ed05000b4d2e14c"
               target="_blank"
-              className="text-blue-400 hover:text-blue-300"
+              className="text-blue-400 hover:text-blue-300 pb-16"
               rel="noreferrer"
             >
               Upwork

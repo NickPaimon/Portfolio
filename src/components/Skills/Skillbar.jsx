@@ -31,7 +31,7 @@ const SkillBar = ({ skill, level, startAnimation, id }) => {
   };
   return (
     <div
-      className={` bg-blend-multiply border-2 border-gray-500 hover:border-gray-400 w-[280px]  h-[220px]   bg-gradient-to-r from-gray-800 to-gray-900 shadow-2xl flex flex-col justify-center items-center space-y-4 rounded-lg transition-all duration-200 ease-in-out transform m-4 ${
+      className={` bg-blend-multiply border-2 border-gray-500 hover:border-gray-400 w-[260px]  h-[200px]   bg-gradient-to-r from-gray-800 to-gray-900 shadow-2xl flex flex-col justify-center items-center space-y-4 rounded-lg transition-all duration-200 ease-in-out transform m-4 ${
         id === 0 ? "md:ml-4 md:mt-10 sm:pb-0 sm:mt-6" : ""
       }`}
       style={{

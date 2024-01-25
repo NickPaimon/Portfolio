@@ -2,17 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import SkillBar from "./Skillbar";
 
 const Skills = () => {
-  const skillRef = useRef(null);
-  const [startAnimation, setStartAnimation] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries, observer) => {
-      const entry = entries[0];
-      setStartAnimation(entry.isIntersecting);
-    });
-    observer.observe(skillRef.current);
-  }, []);
-
   const skills = [
     { name: "JavaScript", level: 80 },
     { name: "TypeScript", level: 70 },
@@ -26,27 +15,53 @@ const Skills = () => {
     { name: "MySQL", level: 60 },
   ];
 
+  const skillRef = useRef(null);
+  const [startAnimation, setStartAnimation] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setStartAnimation(true);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
+      }
+    );
+
+    if (skillRef.current) {
+      observer.observe(skillRef.current);
+    }
+
+    return () => {
+      if (skillRef.current) {
+        observer.unobserve(skillRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div
-      className="bg-gray-900 text-white py-12 md:py-24 md:px-12 px-6"
+      className="bg-gray-900 text-white py-12 md:py-24 md:px-12 px-6 border-t border-b mb-[1px] border-gray-500"
       id="skills"
       ref={skillRef}
     >
-      <div className=" ">
-        <h2 className="sm:text-4xl text-2xl font-bold mb-12 text-center ">
-          Professional Skills
-        </h2>
-        <div className="flex justify-around flex-row space-y-6 md:space-y-10 flex-wrap items-start">
-          {skills.map((skill, index) => (
-            <SkillBar
-              key={index}
-              id={index}
-              skill={skill.name}
-              level={skill.level}
-              startAnimation={startAnimation}
-            />
-          ))}
-        </div>
+      <h2 className="sm:text-4xl text-2xl font-bold mb-12 text-center ">
+        Professional Skills
+      </h2>
+      <div className="flex justify-around flex-row space-y-6 md:space-y-10 flex-wrap items-start">
+        {skills.map((skill, index) => (
+          <SkillBar
+            key={index}
+            id={index}
+            skill={skill.name}
+            level={skill.level}
+            startAnimation={startAnimation}
+          />
+        ))}
       </div>
     </div>
   );
