@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useRef, useState } from "react";
 import SkillBar from "./Skillbar";
 
@@ -33,12 +34,14 @@ const Skills = () => {
     );
 
     if (skillRef.current) {
-      observer.observe(skillRef.current);
+      const currentRef = skillRef.current;
+      observer.observe(currentRef);
     }
 
     return () => {
       if (skillRef.current) {
-        observer.unobserve(skillRef.current);
+        const currentRef = skillRef.current;
+        observer.unobserve(currentRef);
       }
     };
   }, []);

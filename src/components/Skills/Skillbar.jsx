@@ -46,9 +46,9 @@ const SkillBar = ({ skill, level, startAnimation, id }) => {
         alt={`${skill} logo`}
         className="h-12 w-12 object-contain"
       />
-      <div className="w-3/4 bg-gray-700 rounded-full h-4 dark:bg-gray-700">
+      <div className="w-3/4 bg-gray-700 rounded-full h-4 dark:bg-gray-700 mt-[10px]">
         <div
-          className={`rounded-full pb-1 px-1 h-4 font-normal align-middle bg-gray-300 text-right text-gray-900 text-xs`}
+          className={`rounded-full pb-1 px-1 h-4 font-normal align-middle bg-blue-400 text-right text-gray-100 text-xs`}
           style={{
             width: `${width}%`,
             transition: `width 1.5s ${level * 0.01}s`,

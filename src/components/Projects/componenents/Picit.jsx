@@ -12,7 +12,7 @@ const ExperiencePicit = () => {
           <img
             src={`${process.env.REACT_APP_BASE_URL}/assets/picit.png`}
             alt="Picit Logo"
-            className="md:w-18 sm:w-16 w-12 px-2 py-1 bg-black cursor-pointer"
+            className="md:w-18 sm:w-16 w-12 cursor-pointer"
           />
         </a>
         <div className="px-2">

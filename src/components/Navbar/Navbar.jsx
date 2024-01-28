@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const offset = window.innerWidth <= 640 ? -50 : -70;
   return (
-    <nav className="fixed w-full backdrop-blur-lg bg-gray-800 bg-opacity-90 text-black shadow-lg backdrop-filter border-b border-gray-500 z-10">
-      <div className="bg-blue-600 bg-opacity-20  w-full">
+    <nav className="fixed w-full bg-gradient-to-br from-gray-700 via-gray-900 to-black text-black shadow-lg backdrop-filter z-10">
+      <div>
         <div className="container mx-auto sm:px-6 py-3 flex justify-around items-center px-2 sm:text-sm text-xs z-40">
           <div
             onClick={() => {
@@ -16,10 +17,12 @@ const Navbar = () => {
             }}
             className="flex justify-center items-center border-2 border-gray-700 rounded-full sm:h-12 sm:w-12 w-6 h-6 overflow-hidden cursor-pointer"
           >
-            <img
+            <motion.img
               src={`${process.env.REACT_APP_BASE_URL || "."}/assets/logo.png`}
               alt="Logo"
-              className="z-20 animate-spin align-middle"
+              className="z-20 align-middle"
+              whileHover={{ rotate: 360 }}
+              transition={{ duration: 2 }}
             />{" "}
           </div>
           <div className="flex">

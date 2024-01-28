@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div
-      className=" bg-gradient-to-r from-blue-100 via-blue-500 to-blue-900 text-white text-center mb:py-16 sm:py-12 py-4 md:px-36 sm:px-24 px-12 border-t border-gray-500 font-roboto"
+      className=" bg-gradient-to-b from-gray-700 via-gray-900 to-black text-white text-center mb:py-16 sm:py-12 py-4 md:px-36 sm:px-24 px-12 border-t border-gray-500 font-roboto"
       id="contact"
     >
       <div className="flex justify-around align-center items-center ">

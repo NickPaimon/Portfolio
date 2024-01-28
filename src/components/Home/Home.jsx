@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 const HomePage = () => {
   return (
-    <div className="hero-background  bg-gradient-to-b from-blue-100 from-0% via-blue-900 via-70% to-gray-900 to-100% h-screen flex justify-center items-center">
+    <div className="hero-background  bg-gradient-to-br from-gray-700 via-gray-900 to-black h-screen flex justify-center items-center">
       <div className="flex flex-col justify-center items-center h-full space-y-6">
         <h1 className="sm:text-5xl text-3xl font-bold text-white mb-4 text-center font-roboto">
           I'm Mykola Pecheniuk
