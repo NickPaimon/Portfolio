@@ -3,7 +3,7 @@ import logo from '../../../assets/coinlib.svg';
 
 const ExperienceCoinlib: FC = () => {
   return (
-    <div className="bg-white text-gray-800 md:p-8 sm:p-6 p-4 md:my-24 sm:my-18 my-12 rounded-md border-2 border-blue-300 shadow-md font-roboto">
+    <div className="bg-white  text-gray-800 md:p-8 sm:p-6 p-4 md:my-24 sm:my-18 my-12 rounded-md border-2 border-blue-300 shadow-md font-roboto hover:border-blue-600 hover:shadow-xl hover:shadow-slate-950">
       <div className="flex justify-around items-center mb-6">
         <a href="https://coinlib.io/" target="_blank" rel="noreferrer">
           <img
