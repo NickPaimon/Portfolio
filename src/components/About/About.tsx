@@ -1,6 +1,6 @@
-import React from "react";
+import React, { FC } from 'react';
 
-const Aboutme = () => {
+const Aboutme: FC = () => {
   return (
     <div
       id="about"
@@ -39,7 +39,7 @@ const Aboutme = () => {
             Email: snegovik3500@gmail.com | Phone: +380 (66) 678-58-59
           </p>
           <p className="md:text-xl sm:text-lg text-base ">
-            Explore my work on{" "}
+            Explore my work on{' '}
             <a
               href="https://github.com/NickPaimon"
               target="_blank"
@@ -47,8 +47,8 @@ const Aboutme = () => {
               rel="noreferrer"
             >
               GitHub
-            </a>{" "}
-            and{" "}
+            </a>{' '}
+            and{' '}
             <a
               href="https://www.upwork.com/freelancers/~011ed05000b4d2e14c"
               target="_blank"
@@ -57,7 +57,6 @@ const Aboutme = () => {
             >
               Upwork
             </a>
-            .
           </p>
         </div>
       </div>

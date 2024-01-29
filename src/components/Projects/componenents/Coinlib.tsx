@@ -1,7 +1,7 @@
-import React from "react";
-import logo from "../../../assets/coinlib.svg";
+import React, { FC } from 'react';
+import logo from '../../../assets/coinlib.svg';
 
-const ExperienceCoinlib = () => {
+const ExperienceCoinlib: FC = () => {
   return (
     <div className="bg-white text-gray-800 md:p-8 sm:p-6 p-4 md:my-24 sm:my-18 my-12 rounded-md border-2 border-blue-300 shadow-md font-roboto">
       <div className="flex justify-around items-center mb-6">

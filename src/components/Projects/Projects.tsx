@@ -1,9 +1,9 @@
-import React from "react";
-import ExperienceEnvestnet from "./componenents/Envestnet";
-import ExperiencePicit from "./componenents/Picit";
-import ExperienceCoinlib from "./componenents/Coinlib";
+import React, { FC } from 'react';
+import ExperienceEnvestnet from './componenents/Envestnet';
+import ExperiencePicit from './componenents/Picit';
+import ExperienceCoinlib from './componenents/Coinlib';
 
-const Projects = () => {
+const Projects: FC = () => {
   return (
     <div
       id="projects"

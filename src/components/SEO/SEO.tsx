@@ -1,6 +1,7 @@
-import { Helmet } from "react-helmet";
+import React, { FC } from 'react';
+import { Helmet } from 'react-helmet';
 
-const SEO = () => {
+const SEO: FC = () => {
   return (
     <Helmet>
       <title>Frontend Developer - Mykola Pecheniuk</title>

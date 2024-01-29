@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-scroll";
+import React, { FC } from 'react';
+import { Link } from 'react-scroll';
 
-const HomePage = () => {
+const HomePage: FC = () => {
   return (
     <div className="hero-background  bg-gradient-to-br from-gray-700 via-gray-900 to-black h-screen flex justify-center items-center">
       <div className="flex flex-col justify-center items-center h-full space-y-6">
