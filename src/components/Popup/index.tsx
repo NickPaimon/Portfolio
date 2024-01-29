@@ -1,18 +1,22 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import axios from 'axios';
+import { Contact } from '../About/About';
+import { env } from 'node:process';
 import '../../index.css';
 
 interface PopupProps {
+  isPopupVisible: Contact;
   onClose: () => void;
-  isPopupVisible: boolean;
 }
 
-const Popup: React.FC<PopupProps> = ({ onClose, isPopupVisible }) => {
-  const form = useRef();
+const Popup: React.FC<PopupProps> = ({ isPopupVisible, onClose }) => {
   const [input1, setInput1] = useState('');
+  const form = useRef(null);
 
-  const handleSubmit = (event: React.FormEvent) => {
-    event.preventDefault();
+  const handleSubmit = () => {
+    console.log('email');
+    if (input1 === '') return;
     emailjs
       .sendForm(
         'service_v16z5xn',
@@ -32,14 +36,46 @@ const Popup: React.FC<PopupProps> = ({ onClose, isPopupVisible }) => {
     onClose();
   };
 
+  const handlePhoneClick = () => {
+    if (input1 === '') return;
+
+    const CHAT_ID = process.env.REACT_APP_CHAT_ID;
+    const HTTP_API_TOKEN = process.env.REACT_APP_HTTP_API_TOKEN;
+
+    const url = `https://api.telegram.org/bot${HTTP_API_TOKEN}/sendMessage`;
+    console.log(CHAT_ID);
+    const options = {
+      chat_id: CHAT_ID,
+      text: input1,
+    };
+    console.log(options);
+    axios
+      .post(url, options)
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+    onClose();
+  };
+
   return (
     <>
-      {isPopupVisible && (
+      {(isPopupVisible === Contact.Email ||
+        isPopupVisible === Contact.Phone) && (
         <div className="fixed inset-0 bg-black opacity-50"></div>
       )}
       <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-1/2 h-1/2 border-2 border-black bg-gradient-to-br from-gray-700 via-gray-900 to-black p-5 rounded shadow-lg flex flex-col items-center justify-center space-y-16 animate-fadeIn">
-        <h1 className="text-white text-2xl ">Contact me</h1>
-        <form className="w-full" onSubmit={handleSubmit} ref={form}>
+        <h1 className="text-white text-2xl ">
+          Contact me{' '}
+          {isPopupVisible === Contact.Email
+            ? 'on email'
+            : isPopupVisible === Contact.Phone
+              ? 'on telegram'
+              : ''}
+        </h1>
+        <form ref={form} onSubmit={handleSubmit} className="w-full px-10">
           <input
             type="text"
             value={input1}
@@ -57,7 +93,13 @@ const Popup: React.FC<PopupProps> = ({ onClose, isPopupVisible }) => {
             </button>
             <button
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-              type="submit"
+              onClick={
+                isPopupVisible === Contact.Phone
+                  ? handlePhoneClick
+                  : isPopupVisible === Contact.Email
+                    ? handleSubmit
+                    : undefined
+              }
             >
               Submit
             </button>

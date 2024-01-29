@@ -1,15 +1,20 @@
-import React, { FC, useState } from 'react';
+import React, { FC, forwardRef, useRef, useState } from 'react';
 import Popup from '../Popup';
 
-const Aboutme: FC = () => {
-  const [isPopupVisible, setIsPopupVisible] = useState(false);
+export enum Contact {
+  Email = 'email',
+  Phone = 'phone',
+  Off = 'off',
+}
 
+const Aboutme: FC = () => {
+  const [isPopupVisible, setIsPopupVisible] = useState(Contact.Off);
   const handleEmailClick = () => {
-    setIsPopupVisible(true);
+    setIsPopupVisible(Contact.Email);
   };
 
-  const handlePopupClose = () => {
-    setIsPopupVisible(false);
+  const handlePhoneClick = () => {
+    setIsPopupVisible(Contact.Phone);
   };
 
   return (
@@ -54,7 +59,13 @@ const Aboutme: FC = () => {
             >
               snegovik3500@gmail.com
             </span>
-            {' |'} Phone: +380 (66) 678-58-59
+            {' |'} Telegram:{' '}
+            <span
+              className="text-blue-400 cursor-pointer"
+              onClick={handlePhoneClick}
+            >
+              +380 (66) 678-58-59
+            </span>
           </p>
           <p className="md:text-xl sm:text-lg text-base ">
             Explore my work on{' '}
@@ -78,8 +89,12 @@ const Aboutme: FC = () => {
           </p>
         </div>
       </div>
-      {isPopupVisible && (
-        <Popup onClose={handlePopupClose} isPopupVisible={isPopupVisible} />
+      {(isPopupVisible === Contact.Email ||
+        isPopupVisible === Contact.Phone) && (
+        <Popup
+          isPopupVisible={isPopupVisible}
+          onClose={() => setIsPopupVisible(Contact.Off)}
+        />
       )}
     </div>
   );
