@@ -2,7 +2,6 @@ import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import axios from 'axios';
 import { Contact } from '../About/About';
-import { env } from 'node:process';
 import '../../index.css';
 
 interface PopupProps {
@@ -15,7 +14,6 @@ const Popup: React.FC<PopupProps> = ({ isPopupVisible, onClose }) => {
   const form = useRef(null);
 
   const handleSubmit = () => {
-    console.log('email');
     if (input1 === '') return;
     emailjs
       .sendForm(
@@ -48,7 +46,6 @@ const Popup: React.FC<PopupProps> = ({ isPopupVisible, onClose }) => {
       chat_id: CHAT_ID,
       text: input1,
     };
-    console.log(options);
     axios
       .post(url, options)
       .then((response) => {
