@@ -1,6 +1,17 @@
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
+import Popup from '../Popup';
 
 const Aboutme: FC = () => {
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+  const handleEmailClick = () => {
+    setIsPopupVisible(true);
+  };
+
+  const handlePopupClose = () => {
+    setIsPopupVisible(false);
+  };
+
   return (
     <div
       id="about"
@@ -36,7 +47,14 @@ const Aboutme: FC = () => {
             Connect with Me
           </h2>
           <p className="md:text-xl sm:text-lg text-base">
-            Email: snegovik3500@gmail.com | Phone: +380 (66) 678-58-59
+            Email:{' '}
+            <span
+              className="text-blue-400 cursor-pointer"
+              onClick={handleEmailClick}
+            >
+              snegovik3500@gmail.com
+            </span>
+            {' |'} Phone: +380 (66) 678-58-59
           </p>
           <p className="md:text-xl sm:text-lg text-base ">
             Explore my work on{' '}
@@ -60,6 +78,9 @@ const Aboutme: FC = () => {
           </p>
         </div>
       </div>
+      {isPopupVisible && (
+        <Popup onClose={handlePopupClose} isPopupVisible={isPopupVisible} />
+      )}
     </div>
   );
 };

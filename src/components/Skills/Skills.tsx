@@ -56,7 +56,7 @@ const Skills: React.FC = () => {
       id="skills"
       ref={skillRef}
     >
-      <h2 className="sm:text-4xl text-2xl font-bold mb-12 text-center ">
+      <h2 className="sm:text-4xl text-2xl font-bold mb-12 text-center select-none ">
         Professional Skills
       </h2>
       <div className="flex justify-around flex-row space-y-6 md:space-y-10 flex-wrap items-baseline">
