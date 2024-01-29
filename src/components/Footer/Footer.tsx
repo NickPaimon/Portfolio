@@ -10,7 +10,7 @@ const Footer: FC = () => {
         <img
           src={`${process.env.REACT_APP_BASE_URL || '.'}/assets/photo.jpg`}
           alt="Mykola Pecheniuk"
-          className="rounded-full h-20 w-20 border-2 border-gray-500 object-cover"
+          className="rounded-full h-20 w-20 border-2 border-gray-500 object-cover select-none"
         />
         <div>
           <p className="text-sm mb-2">
@@ -20,7 +20,7 @@ const Footer: FC = () => {
           <p className="text-xs">
             Connect with me on my
             <a
-              className="text-gray-900 font-bold hover:text-blue-300 ml-1"
+              className="text-gray-400 font-bold hover:text-blue-300 ml-1"
               href="mailto:snegovik3500@gmail.com"
             >
               Email
