@@ -5,9 +5,9 @@ import Skills from './components/Skills/Skills';
 import Footer from './components/Footer/Footer';
 import Projects from './components/Projects/Projects';
 import ParticlesContainer from './Particles/Particles';
-import Typography from './Typography';
 import { MyGlobalContext } from './GlobalContext';
 import Navbar from './components/Navbar/Navbar';
+import CustomLoader from './Typography';
 
 const App: FC = () => {
   const [loading, setLoading] = useState<boolean>(true);
@@ -16,16 +16,18 @@ const App: FC = () => {
     window.history.pushState(null, '', '/');
   }, []);
   return (
-    <MyGlobalContext.Provider value={{ loading, setLoading }}>
-      <Typography />
-      <ParticlesContainer />
-      <Navbar />
-      <Home />
-      <Skills />
-      <Projects />
-      <About />
-      <Footer />
-    </MyGlobalContext.Provider>
+    <>
+      <MyGlobalContext.Provider value={{ loading, setLoading }}>
+        <ParticlesContainer />
+        <Navbar />
+        <CustomLoader />
+        <Home />
+        <Skills />
+        <Projects />
+        <About />
+        <Footer />
+      </MyGlobalContext.Provider>
+    </>
   );
 };
 

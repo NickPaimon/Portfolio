@@ -1,15 +1,17 @@
 import React, { FC } from 'react';
 import { motion } from 'framer-motion';
 import { scrollToSection } from '../../utils/scroll';
+import { useGlobalContext } from '../../GlobalContext';
 
 const Navbar: FC = () => {
-  return (
+  const { loading } = useGlobalContext();
+  return !loading ? (
     <nav className="fixed w-full bg-gradient-to-br from-gray-700 via-gray-900 to-black text-black shadow-lg backdrop-filter z-10">
       <div>
         <div className="container mx-auto sm:px-6 py-3 flex justify-around items-center px-2 sm:text-sm text-xs z-40">
           <div
             onClick={() => scrollToSection(event, `home`)}
-            className="flex justify-center items-center border-2 border-gray-700 rounded-full sm:h-12 sm:w-12 w-6 h-6 overflow-hidden cursor-pointer"
+            className="flex justify-center items-center border-2 border-gray-700 rounded-full sm:h-12 sm:w-12 w-8 h-8 overflow-hidden cursor-pointer"
           >
             <motion.img
               src={`${process.env.REACT_APP_BASE_URL}Portfolio/assets/logo.png`}
@@ -34,6 +36,8 @@ const Navbar: FC = () => {
         </div>
       </div>
     </nav>
+  ) : (
+    <></>
   );
 };
 

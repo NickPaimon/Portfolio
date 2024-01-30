@@ -1,7 +1,9 @@
 import React, { FC } from 'react';
 import { scrollToSection } from '../../utils/scroll';
+import { useGlobalContext } from '../../GlobalContext';
 
 const HomePage: FC = () => {
+  const { loading } = useGlobalContext();
   return (
     <>
       <div
@@ -9,9 +11,11 @@ const HomePage: FC = () => {
         className="hero-background bg-gradient-to-br from-gray-700 via-gray-900 to-black h-screen flex justify-center items-center"
       >
         <div className="flex flex-col justify-center items-center h-full space-y-6">
-          <h1 className="sm:text-5xl text-3xl font-bold text-white mb-4 text-center font-roboto select-none z-10">
+          <p
+            className={` ${loading ? 'hidden' : 'visible'} ?sm:text-5xl text-3xl font-bold text-white mb-4 text-center font-roboto select-none z-10`}
+          >
             I'm Mykola Pecheniuk
-          </h1>
+          </p>
           <p className="sm:text-xl text-sm text-gray-300 mb-8 font-roboto select-none z-10">
             Javascript and React/React Native developer
           </p>

@@ -16,11 +16,6 @@ module.exports = {
         // ... and so on for each letter ...
       },
     },
-    variants: {
-      extend: {
-        opacity: ['focus'],
-      },
-    },
     plugins: [],
   },
 };
