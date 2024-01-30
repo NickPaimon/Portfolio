@@ -51,23 +51,23 @@ const Aboutme: FC = () => {
           <h2 className="md:text-3xl sm:text-2xl text-xl text-center font-semibold mb-12">
             Connect with Me
           </h2>
-          <p className="md:text-xl sm:text-lg text-base">
-            Email:{' '}
+          <div className="md:text-xl sm:text-lg text-base flex flex-col">
             <span
-              className="text-blue-400 cursor-pointer"
+              className="text-blue-400 cursor-pointer p-2"
               onClick={handleEmailClick}
             >
-              snegovik3500@gmail.com
+              <span className="text-black">Email:</span> snegovik3500@gmail.com
             </span>
-            {' |'} Telegram:{' '}
+
             <span
-              className="text-blue-400 cursor-pointer"
+              className="text-blue-400 cursor-pointer p-2 "
               onClick={handlePhoneClick}
             >
+              <span className="text-black">Telegram:</span>
               +380 (66) 678-58-59
             </span>
-          </p>
-          <p className="md:text-xl sm:text-lg text-base ">
+          </div>
+          <p className="md:text-xl sm:text-lg text-base p-2 ">
             Explore my work on{' '}
             <a
               href="https://github.com/NickPaimon"
