@@ -1,8 +1,8 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import axios from 'axios';
-import { Contact } from '../About/About';
-import '../../index.css';
+import { Contact } from '../components/About/About';
+import '../index.css';
 
 interface PopupProps {
   isPopupVisible: Contact;

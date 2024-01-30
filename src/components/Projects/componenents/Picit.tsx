@@ -10,7 +10,7 @@ const ExperiencePicit: FC = () => {
           rel="noreferrer"
         >
           <img
-            src={`${process.env.REACT_APP_BASE_URL}/assets/picit.png`}
+            src={`${process.env.REACT_APP_BASE_URL}Portfolio/assets/picit.png`}
             alt="Picit Logo"
             className="md:w-18 sm:w-16 w-12 cursor-pointer"
           />

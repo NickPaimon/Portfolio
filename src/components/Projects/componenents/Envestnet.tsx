@@ -6,7 +6,7 @@ const ExperienceEnvestnet: FC = () => {
       <div className="flex justify-around items-center mb-6">
         <a href="https://www.envestnet.com/" target="_blank" rel="noreferrer">
           <img
-            src={`${process.env.REACT_APP_BASE_URL}/assets/envestnet.png`}
+            src={`${process.env.REACT_APP_BASE_URL}Portfolio/assets/envestnet.png`}
             alt="Envestnet Logo"
             className="md:w-36 sm:w-24 w-20 px-2 py-1 bg-black cursor-pointer"
           />

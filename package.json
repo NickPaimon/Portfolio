@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nickpaimon.github.io/Portfolio/",
+  "homepage": "https://nickpaimon.github.io/",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@emailjs/browser": "^3.12.1",
@@ -17,9 +17,7 @@
     "react-helmet": "^6.1.0",
     "react-particles": "^2.12.2",
     "react-scripts": "5.0.1",
-    "react-scroll": "^1.9.0",
-    "tsparticles": "^3.1.0",
-    "web-vitals": "^2.1.4"
+    "tsparticles": "^3.1.0"
   },
   "scripts": {
     "predeploy": "npm run build",

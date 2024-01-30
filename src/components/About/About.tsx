@@ -1,6 +1,5 @@
-import React, { FC, forwardRef, useRef, useState } from 'react';
-import Popup from '../Popup';
-
+import React, { FC, useState } from 'react';
+import Popup from '../../Popup';
 export enum Contact {
   Email = 'email',
   Phone = 'phone',
@@ -9,6 +8,7 @@ export enum Contact {
 
 const Aboutme: FC = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(Contact.Off);
+
   const handleEmailClick = () => {
     setIsPopupVisible(Contact.Email);
   };
