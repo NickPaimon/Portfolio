@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.a314a139.css",
-    "main.js": "/Portfolio/static/js/main.bb746ef4.js",
+    "main.js": "/Portfolio/static/js/main.2a11871a.js",
     "static/media/tailwind-logo.png": "/Portfolio/static/media/tailwind-logo.3549d9e451d7abb96934.png",
     "static/media/typeorm-logo.png": "/Portfolio/static/media/typeorm-logo.20f61240a7e7c3d8c363.png",
     "static/media/nest-logo.png": "/Portfolio/static/media/nest-logo.94022fdcc7fcc69e3cb7.png",
@@ -14,10 +14,10 @@
     "static/media/coinlib.svg": "/Portfolio/static/media/coinlib.95ee7f9ad688f26d19e5d4820b085ed3.svg",
     "index.html": "/Portfolio/index.html",
     "main.a314a139.css.map": "/Portfolio/static/css/main.a314a139.css.map",
-    "main.bb746ef4.js.map": "/Portfolio/static/js/main.bb746ef4.js.map"
+    "main.2a11871a.js.map": "/Portfolio/static/js/main.2a11871a.js.map"
   },
   "entrypoints": [
     "static/css/main.a314a139.css",
-    "static/js/main.bb746ef4.js"
+    "static/js/main.2a11871a.js"
   ]
 }
