@@ -13,11 +13,11 @@ const Footer: FC = () => {
           className="rounded-full h-20 w-20 border-2 border-gray-500 object-cover select-none"
         />
         <div>
-          <p className="text-sm mb-2">
+          <p className="text-md mb-2">
             &copy; {new Date().getFullYear()} Mykola Pecheniuk. All rights
             reserved.
           </p>
-          <p className="text-xs">
+          <p className="text-sm">
             Connect with me on my
             <a
               className="text-gray-400 font-bold hover:text-blue-300 ml-1"
