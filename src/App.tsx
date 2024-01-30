@@ -13,7 +13,7 @@ const App: FC = () => {
   const [loading, setLoading] = useState<boolean>(true);
   useEffect(() => {
     window.scrollTo(0, 0);
-    window.history.pushState(null, '', '/');
+    window.history.pushState(null, '', '/Portfolio/');
   }, []);
   return (
     <>

@@ -8,7 +8,7 @@ const Footer: FC = () => {
     >
       <div className="flex justify-around align-center items-center ">
         <img
-          src={`${process.env.REACT_APP_BASE_URL + '/Portfolio'}/assets/photo.jpg`}
+          src={`${process.env.REACT_APP_BASE_URL + ''}/assets/photo.jpg`}
           alt="Mykola Pecheniuk"
           className="rounded-full h-20 w-20 border-2 border-gray-500 object-cover select-none"
         />

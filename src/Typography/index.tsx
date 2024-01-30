@@ -32,7 +32,7 @@ const CustomLoader = () => {
         <span></span>
         <span></span>
       </div>
-      <h1 className="text-black font-semibold text-md font-bold uppercase absolute right-6 ">
+      <h1 className="text-black text-md font-bold uppercase absolute right-6 ">
         Redirecting
       </h1>
     </div>

@@ -14,7 +14,7 @@ const Navbar: FC = () => {
             className="flex justify-center items-center border-2 border-gray-700 rounded-full sm:h-12 sm:w-12 w-8 h-8 overflow-hidden cursor-pointer"
           >
             <motion.img
-              src={`${process.env.REACT_APP_BASE_URL}Portfolio/assets/logo.png`}
+              src={`${process.env.REACT_APP_BASE_URL}assets/logo.png`}
               alt="Logo"
               className="z-20 align-middle"
               whileHover={{ rotate: 360 }}
