@@ -52,9 +52,12 @@ const Skills: React.FC = () => {
 
   return (
     <div
-      className="bg-gray-900 text-white py-12 md:py-24 md:px-12 px-6 border-t border-b mb-[1px] border-gray-500"
+      className="bg-gradient-to-b from-gray-900  to-black  text-white py-12 md:py-24 md:px-12 px-6 border-t border-b mb-[1px] border-gray-500"
       id="skills"
       ref={skillRef}
+      style={{
+        backdropFilter: 'blur(1px)',
+      }}
     >
       <h2 className="sm:text-4xl text-2xl font-bold mb-12 text-center select-none ">
         Professional Skills

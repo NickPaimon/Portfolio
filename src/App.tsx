@@ -7,7 +7,7 @@ import Projects from './components/Projects/Projects';
 import ParticlesContainer from './Particles/Particles';
 import { MyGlobalContext } from './GlobalContext';
 import Navbar from './components/Navbar/Navbar';
-import CustomLoader from './Typography';
+import CustomLoader from './LoadingAnimation';
 
 const App: FC = () => {
   const [loading, setLoading] = useState<boolean>(true);

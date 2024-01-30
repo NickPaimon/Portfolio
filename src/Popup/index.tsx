@@ -12,6 +12,7 @@ interface PopupProps {
 const Popup: React.FC<PopupProps> = ({ isPopupVisible, onClose }) => {
   const [input1, setInput1] = useState('');
   const form = useRef(null);
+  const popupRef = useRef(null);
 
   const handleSubmit = () => {
     if (input1 === '') return;
@@ -57,13 +58,33 @@ const Popup: React.FC<PopupProps> = ({ isPopupVisible, onClose }) => {
     onClose();
   };
 
+  const handleOutsideClick = (e) => {
+    if (popupRef.current && !popupRef.current.contains(e.target)) {
+      onClose(); // Close popup if click is outside
+    }
+  };
+  useEffect(() => {
+    if (isPopupVisible) {
+      // Add event listener when popup is opened
+      document.addEventListener('mousedown', handleOutsideClick);
+    }
+
+    return () => {
+      // Clean up event listener
+      document.removeEventListener('mousedown', handleOutsideClick);
+    };
+  }, [isPopupVisible]);
+
   return (
     <>
       {(isPopupVisible === Contact.Email ||
         isPopupVisible === Contact.Phone) && (
         <div className="fixed inset-0 bg-black opacity-50"></div>
       )}
-      <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:w-1/2 sm:w-3/4 w-11/12 md:h-1/2 sm:h-3/4 h-[60vh] border-2 border-black bg-gradient-to-br from-gray-700 via-gray-900 to-black p-5 rounded shadow-lg flex flex-col items-center justify-center space-y-4 animate-fadeIn">
+      <div
+        ref={popupRef}
+        className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:w-1/2 sm:w-3/4 w-11/12 md:h-1/2 sm:h-3/4 h-[60vh] border-2 border-black bg-gradient-to-br from-gray-700 via-gray-900 to-black p-5 rounded shadow-lg flex flex-col items-center justify-center space-y-4 animate-fadeIn"
+      >
         <p className="text-white md:text-2xl sm:text-xl text-lg ">
           Contact me{' '}
           {isPopupVisible === Contact.Email

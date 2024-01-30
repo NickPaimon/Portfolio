@@ -11,14 +11,14 @@ const Navbar: FC = () => {
         <div className="container mx-auto sm:px-6 py-3 flex justify-around items-center px-2 sm:text-sm text-xs z-40">
           <div
             onClick={() => scrollToSection(event, `home`)}
-            className="flex justify-center items-center border-2 border-gray-700 rounded-full sm:h-12 sm:w-12 w-8 h-8 overflow-hidden cursor-pointer"
+            className="flex justify-center items-center border-2 border-gray-700 rounded-full sm:h-16 sm:w-16 w-12 h-12 overflow-hidden cursor-pointer"
           >
             <motion.img
               src={`${process.env.REACT_APP_BASE_URL}assets/logo.png`}
               alt="Logo"
-              className="z-20 align-middle"
-              whileHover={{ rotate: 360 }}
-              transition={{ duration: 2 }}
+              className="z-20 align-middle w-full"
+              whileHover={{ scale: 1.5 }}
+              transition={{ duration: 0.2 }}
             />{' '}
           </div>
           <div className="flex">
