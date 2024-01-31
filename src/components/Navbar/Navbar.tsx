@@ -27,7 +27,7 @@ const Navbar: FC = () => {
                 href={`${el}`}
                 key={el}
                 onClick={() => scrollToSection(event, `${el}`)}
-                className="px-2 text-lg sm:px-4 text-white hover:text-blue-300 cursor-pointer "
+                className="px-2 text-lg sm:px-4 text-gray-400 hover:text-gray-300 cursor-pointer shadow-md hover:shadow-xs hover:shadow-gray-400 rounded-lg"
               >
                 {`${el[0].toUpperCase() + el.substring(1)}`}
               </a>

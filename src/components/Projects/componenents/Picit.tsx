@@ -25,19 +25,19 @@ const ExperiencePicit: FC = () => {
         </div>
       </div>
       <ul className="list-disc pl-5 space-y-4 md:text-lg sm:text-sm text-xs">
-        <li>
+        <li className="text-gray-600 font-bold shadow-sm">
           Tasked with leading the development of Picit from its conceptual
           architecture all the way to deployment.
         </li>
-        <li>
+        <li className="text-gray-600 font-bold shadow-sm">
           Successfully managed and oversaw the app's launch on both Google Play
           Market and the Apple App Store.
         </li>
-        <li>
+        <li className="text-gray-600 font-bold shadow-sm">
           Played an integral role in establishing the app’s foundational
           structure, ensuring scalability and efficient performance.
         </li>
-        <li>
+        <li className="text-gray-600 font-bold shadow-sm">
           Developed and implemented features that enhanced user engagement,
           leveraging React Native, Redux Toolkit, and TypeScript.
         </li>

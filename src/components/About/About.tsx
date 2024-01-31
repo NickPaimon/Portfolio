@@ -2,7 +2,7 @@ import React, { FC, useState } from 'react';
 import Popup from '../../Popup';
 import Technical from './ components/Technical';
 import Projects from './ components/Projects';
-// import Connect from './ components/Connect';
+import Connect from './ components/Connect';
 export enum Contact {
   Email = 'email',
   Phone = 'phone',
@@ -31,10 +31,10 @@ const Aboutme: FC = () => {
         </p>
         <Technical />
         <Projects />
-        {/* <Connect
+        <Connect
           handleEmailClick={handleEmailClick}
           handlePhoneClick={handlePhoneClick}
-        /> */}
+        />
       </div>
       {(isPopupVisible === Contact.Email ||
         isPopupVisible === Contact.Phone) && (

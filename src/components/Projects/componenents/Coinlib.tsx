@@ -21,20 +21,20 @@ const ExperienceCoinlib: FC = () => {
           </p>
         </div>
       </div>
-      <ul className="list-disc pl-5 space-y-4 md:text-lg sm:text-sm text-xs">
-        <li>
+      <ul className="list-disc pl-5 space-y-4 md:text-lg sm:text-sm ">
+        <li className="text-gray-600 font-bold shadow-sm">
           Concentrated on front-end development with React Native, adding new
           features that enhanced the overall user experience.
         </li>
-        <li>
+        <li className="text-gray-600 font-bold shadow-sm">
           Directed code refactoring efforts to improve application performance
           and maintainability.
         </li>
-        <li>
+        <li className="text-gray-600 font-bold shadow-sm">
           Key contributor in the development process documentation, ensuring
           best practices and continuity.
         </li>
-        <li>
+        <li className="text-gray-600 font-bold shadow-sm">
           Instrumental in the app's successful deployment to the app markets,
           fortifying Coinlib's presence for cryptocurrency traders and
           enthusiasts.

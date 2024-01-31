@@ -19,11 +19,11 @@ const HomePage: FC = () => {
           <p className="sm:text-xl text-sm text-gray-300 mb-8 font-roboto select-none z-10">
             Javascript and React/React Native developer
           </p>
-          <div className="box-border text-sm cursor-pointer backdrop-blur-lg bg-gray-800 bg-opacity-90 hover:bg-blue-400 text-white font-semibold rounded-full transition duration-300 ease-in-out h-12 w-60">
+          <div className="box-border text-sm cursor-pointer backdrop-blur-lg bg-gray-800 bg-opacity-90 hover:bg-gray-400 text-white font-semibold rounded-full transition duration-300 ease-in-out h-12 w-60">
             <a
               href="#projects"
               onClick={() => scrollToSection(event, `projects`)}
-              className=" text-center select-none text-lg font-roboto w-full h-full flex justify-center items-center bg-blue-600 bg-opacity-20 rounded-full transition duration-300 ease-in-out hover:bg-blue-400 hover:bg-opacity-30 "
+              className=" text-center select-none text-lg font-roboto w-full h-full flex justify-center items-center bg-gray-400 bg-opacity-20 rounded-full transition duration-300 ease-in-out hover:bg-gray-500 hover:bg-opacity-30 shadow-md hover:shadow-xs hover:shadow-gray-400"
             >
               View My Projects
             </a>
