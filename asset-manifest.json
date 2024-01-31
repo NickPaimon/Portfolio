@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.6e603311.css",
-    "main.js": "/Portfolio/static/js/main.4f82a9db.js",
+    "main.css": "/Portfolio/static/css/main.63de6e1f.css",
+    "main.js": "/Portfolio/static/js/main.93f259f0.js",
     "static/media/tailwind-logo.png": "/Portfolio/static/media/tailwind-logo.3549d9e451d7abb96934.png",
     "static/media/typeorm-logo.png": "/Portfolio/static/media/typeorm-logo.20f61240a7e7c3d8c363.png",
     "static/media/nest-logo.png": "/Portfolio/static/media/nest-logo.94022fdcc7fcc69e3cb7.png",
@@ -13,11 +13,11 @@
     "static/media/JavaScript-logo.png": "/Portfolio/static/media/JavaScript-logo.266bd9fb2663dcc057b4.png",
     "static/media/coinlib.svg": "/Portfolio/static/media/coinlib.95ee7f9ad688f26d19e5d4820b085ed3.svg",
     "index.html": "/Portfolio/index.html",
-    "main.6e603311.css.map": "/Portfolio/static/css/main.6e603311.css.map",
-    "main.4f82a9db.js.map": "/Portfolio/static/js/main.4f82a9db.js.map"
+    "main.63de6e1f.css.map": "/Portfolio/static/css/main.63de6e1f.css.map",
+    "main.93f259f0.js.map": "/Portfolio/static/js/main.93f259f0.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e603311.css",
-    "static/js/main.4f82a9db.js"
+    "static/css/main.63de6e1f.css",
+    "static/js/main.93f259f0.js"
   ]
 }
