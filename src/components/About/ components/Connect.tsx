@@ -11,7 +11,7 @@ const Connect = ({ handleEmailClick, handlePhoneClick }) => {
         <div className="p-2">
           <span onClick={handleEmailClick} className="text-black">
             Email:
-            <span className="font-bold hover:text-blue-300 ml-1 cursor-pointer ">
+            <span className="font-semibold hover:font-bold  ml-1 cursor-pointer ">
               snegovik3500@gmail.com
             </span>
           </span>
@@ -19,7 +19,7 @@ const Connect = ({ handleEmailClick, handlePhoneClick }) => {
         <div className="p-2">
           <span onClick={handlePhoneClick} className="text-black">
             Telegram:
-            <span className="font-bold hover:text-blue-300 ml-1 cursor-pointer">
+            <span className="a ml-1 cursor-pointer font-semibold hover:font-bold">
               +380 (66) 678-58-59
             </span>
           </span>
@@ -31,7 +31,7 @@ const Connect = ({ handleEmailClick, handlePhoneClick }) => {
           <a
             href="https://github.com/NickPaimon"
             target="_blank"
-            className="font-bold hover:text-blue-300 ml-1 cursor-pointer"
+            className="font-semibold hover:font-bold ml-1 cursor-pointer"
             rel="noreferrer"
           >
             GitHub
@@ -40,7 +40,7 @@ const Connect = ({ handleEmailClick, handlePhoneClick }) => {
           <a
             href="https://www.upwork.com/freelancers/~011ed05000b4d2e14c"
             target="_blank"
-            className="font-bold hover:text-blue-300 ml-1 cursor-pointer"
+            className="font-semibold hover:font-bold ml-1 cursor-pointer"
             rel="noreferrer"
           >
             Upwork
