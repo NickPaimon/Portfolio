@@ -21,7 +21,7 @@ const ExperienceCoinlib: FC = () => {
           </p>
         </div>
       </div>
-      <ul className="list-disc pl-5 space-y-4 md:text-lg sm:text-sm ">
+      <ul className="list-disc pl-5 space-y-4 md:text-lg sm:text-sm text-xs">
         <li className="text-gray-600 font-bold shadow-sm">
           Concentrated on front-end development with React Native, adding new
           features that enhanced the overall user experience.
