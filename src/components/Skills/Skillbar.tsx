@@ -40,7 +40,7 @@ const SkillBar: React.FC<SkillBarProps> = ({ skill, startAnimation }) => {
 
   return (
     <div
-      className=" hover:border-black border-gray-600 w-[260px] h-[200px] border-2 bg-gradient-to-br from-gray-800 via-gray-900 to-black  shadow-2xl flex flex-col justify-center items-center space-y-4 rounded-lg transition-all duration-200 ease-in-out transform m-4 text-gray-300 hover:text-gray-50 "
+      className=" hover:border-gray-600 border-black w-[260px] h-[200px] border-2 bg-gradient-to-br from-gray-800 via-gray-900 to-black  shadow-2xl flex flex-col justify-center items-center space-y-4 rounded-lg transition-all duration-200 ease-in-out transform m-4 text-gray-300 hover:text-gray-50 "
       style={{
         backdropFilter: 'sepia(1%)',
       }}

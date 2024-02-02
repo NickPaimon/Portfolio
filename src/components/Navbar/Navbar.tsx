@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import { motion } from 'framer-motion';
 import { scrollToSection } from '../../utils/scroll';
 import { useGlobalContext } from '../../GlobalContext';
 
@@ -13,12 +12,10 @@ const Navbar: FC = () => {
             onClick={() => scrollToSection(event, `home`)}
             className="flex justify-center items-center border-2 border-gray-700 rounded-full sm:h-16 sm:w-16 w-12 h-12 overflow-hidden cursor-pointer"
           >
-            <motion.img
+            <img
               src={`${process.env.REACT_APP_BASE_URL}assets/logo.png`}
               alt="Logo"
-              className="z-20 align-middle w-full"
-              whileHover={{ scale: 1.5 }}
-              transition={{ duration: 0.2 }}
+              className="z-20 align-middle w-full transition duration-300 ease-in-out hover:shadow-lg"
             />{' '}
           </div>
           <div className="flex">
@@ -27,7 +24,7 @@ const Navbar: FC = () => {
                 href={`${el}`}
                 key={el}
                 onClick={() => scrollToSection(event, `${el}`)}
-                className="px-2 text-lg sm:px-4 text-gray-400 hover:text-gray-300 cursor-pointer shadow-md hover:shadow-xs hover:shadow-gray-400 rounded-lg"
+                className="px-2 text-lg sm:px-4 text-gray-400 cursor-pointer shadow-md hover:shadow-xs hover:shadow-gray-400 rounded-lg hover:bg-gray-500 hover:text-white transition-colors duration-200"
               >
                 {`${el[0].toUpperCase() + el.substring(1)}`}
               </a>
