@@ -13,7 +13,7 @@ const Navbar: FC = () => {
             className="flex justify-center items-center border-2 border-gray-700 rounded-full sm:h-16 sm:w-16 w-12 h-12 overflow-hidden cursor-pointer"
           >
             <img
-              src={`${process.env.REACT_APP_BASE_URL}assets/logo.png`}
+              src={`${process.env.REACT_APP_BASE_URL}/assets/logo.png`}
               alt="Logo"
               className="z-20 align-middle w-full transition duration-300 ease-in-out hover:shadow-lg"
             />{' '}
