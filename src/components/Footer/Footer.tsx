@@ -10,7 +10,7 @@ const Footer: FC = () => {
         <img
           src={`${process.env.REACT_APP_BASE_URL + ''}/assets/photo.jpg`}
           alt="Mykola Pecheniuk"
-          className="rounded-full h-20 w-20 border-2 border-gray-500 object-cover select-none"
+          className="rounded-full h-20 w-20 border-2 border-gray-500 object-cover select-none hover:opacity-100 hover:border-gray-300 hover:z-50 hover:scale-105"
         />
         <div>
           <p className="text-md mb-2">
