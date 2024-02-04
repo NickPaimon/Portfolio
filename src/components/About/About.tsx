@@ -1,8 +1,11 @@
 import React, { FC, useState } from 'react';
 import Popup from '../../Popup';
 import Technical from './ components/Technical';
-import Projects from './ components/Projects';
+import FromSkyToCode from './ components/FromSkyToCode';
 import Connect from './ components/Connect';
+import EmbracingChange from './ components/EmbracingChange';
+import GrowsInTech from './ components/GrowsInTech';
+
 export enum Contact {
   Email = 'email',
   Phone = 'phone',
@@ -30,7 +33,9 @@ const Aboutme: FC = () => {
           Technical Expertise & Tool Proficiency
         </p>
         <Technical />
-        <Projects />
+        <FromSkyToCode />
+        <EmbracingChange />
+        <GrowsInTech />
         <Connect
           handleEmailClick={handleEmailClick}
           handlePhoneClick={handlePhoneClick}
