@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 
 const ExperiencePicit: FC = () => {
   return (
-    <div className="bg-[#0f0e19] text-gray-300 md:p-8 sm:p-6 p-4 md:my-24 sm:my-18 my-12 rounded-md   font-roboto  ">
+    <div className="bg-[#0f0e19] text-gray-300 md:p-8 sm:p-6 p-4 md:my-24 sm:my-18 my-12 rounded-md opacity-100  font-roboto  ">
       <div className="flex justify-around items-center mb-6">
         <a
           href="https://appstor.io/go/appstore/649082204"

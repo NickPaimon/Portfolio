@@ -6,7 +6,7 @@ const Navbar: FC = () => {
   const { loading } = useGlobalContext();
   return !loading ? (
     <nav
-      className="fixed w-full bg-gradient-to-br from-gray-700 via-gray-900 to-black text-black shadow-lg backdrop-filter z-10"
+      className="fixed w-full bg-gradient-to-br from-gray-700 via-gray-900 to-black text-black shadow-lg backdrop-filter z-20"
       id={'top'}
     >
       <div>
