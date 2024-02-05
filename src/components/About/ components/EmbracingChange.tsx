@@ -2,8 +2,8 @@ import React from 'react';
 
 const EmbracingChange = () => {
   return (
-    <div className="bg-[#0f0e19] text-gray-300 md:p-8 sm:p-6 p-4 md:my-24 sm:my-18 my-12 opacity-100 rounded-md font-roboto ">
-      <div className="mb-12 ">
+    <div className="bg-[#0f0e19] text-gray-300 md:p-8 sm:p-6 p-4 md:my-24 sm:my-18 my-12 opacity-100 opacity-1 rounded-md font-roboto ">
+      <div className="mb-12  ">
         <h2 className="md:text-3xl sm:text-2xl text-xl text-center font-semibold mb-12 z-10">
           A Blend of Discipline, Innovation, and Physical Fitness
         </h2>

@@ -24,6 +24,20 @@ const Connect = ({ handleEmailClick, handlePhoneClick }) => {
             </span>
           </span>
         </div>
+        <div className="p-2">
+          <span onClick={handlePhoneClick} className="text-gray-300">
+            LinkedIn:
+            <span className="a ml-1 cursor-pointer font-semibold hover:font-bold">
+              <a
+                href="https://www.linkedin.com/in/mykola-pecheniuk-6615302b2/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Mykola Pecheniuk
+              </a>
+            </span>
+          </span>
+        </div>
       </div>
       <div>
         <p className="md:text-xl sm:text-lg text-base p-2 ">
