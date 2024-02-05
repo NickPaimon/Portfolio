@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 
 const ExperienceEnvestnet: FC = () => {
   return (
-    <div className="bg-[#0f0e19] text-gray-800 md:p-8 sm:p-6 p-4 md:my-24 sm:my-18 my-12 rounded-md font-roboto ">
+    <div className="bg-[#0f0e19] text-gray-300 md:p-8 sm:p-6 p-4 md:my-24 sm:my-18 my-12 rounded-md font-roboto ">
       <div className="flex justify-around items-center mb-6">
         <a href="https://www.envestnet.com/" target="_blank" rel="noreferrer">
           <img
@@ -21,20 +21,20 @@ const ExperienceEnvestnet: FC = () => {
         </div>
       </div>
       <ul className="list-disc pl-5 space-y-4 md:text-lg sm:text-sm text-xs">
-        <li className="text-gray-600 font-bold shadow-sm">
+        <li className="font-bold shadow-sm">
           Led the transition of a critical financial application's front-end
           from version 4 to 5, focusing on high scalability and robust
           performance.
         </li>
-        <li className="text-gray-600 font-bold shadow-sm">
+        <li className=" font-bold shadow-sm">
           Developed a comprehensive widget library and design system for the new
           version, significantly enhancing the UI/UX aspects.
         </li>
-        <li className="text-gray-600 font-bold shadow-sm">
+        <li className=" font-bold shadow-sm">
           Optimized application performance and played a crucial role in
           resolving critical bugs, ensuring smooth operation post-transition.
         </li>
-        <li className="text-gray-600 font-bold shadow-sm">
+        <li className=" font-bold shadow-sm">
           Utilized key technologies such as React, Redux Toolkit, Highcharts JS,
           TypeScript, and SCSS to build and maintain high-quality software
           solutions.

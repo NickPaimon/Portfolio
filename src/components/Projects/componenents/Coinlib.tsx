@@ -3,7 +3,7 @@ import logo from '../../../assets/coinlib.svg';
 
 const ExperienceCoinlib: FC = () => {
   return (
-    <div className="bg-[#0f0e19] text-gray-800 md:p-8 sm:p-6 p-4 md:my-24 sm:my-18 my-12 rounded-md font-roboto ">
+    <div className="bg-[#0f0e19] text-gray-300 md:p-8 sm:p-6 p-4 md:my-24 sm:my-18 my-12 rounded-md font-roboto ">
       <div className="flex justify-around items-center mb-6">
         <a href="https://coinlib.io/" target="_blank" rel="noreferrer">
           <img
@@ -22,19 +22,19 @@ const ExperienceCoinlib: FC = () => {
         </div>
       </div>
       <ul className="list-disc pl-5 space-y-4 md:text-lg sm:text-sm text-xs">
-        <li className="text-gray-600 font-bold shadow-sm">
+        <li className=" font-bold shadow-sm">
           Concentrated on front-end development with React Native, adding new
           features that enhanced the overall user experience.
         </li>
-        <li className="text-gray-600 font-bold shadow-sm">
+        <li className=" font-bold shadow-sm">
           Directed code refactoring efforts to improve application performance
           and maintainability.
         </li>
-        <li className="text-gray-600 font-bold shadow-sm">
+        <li className=" font-bold shadow-sm">
           Key contributor in the development process documentation, ensuring
           best practices and continuity.
         </li>
-        <li className="text-gray-600 font-bold shadow-sm">
+        <li className=" font-bold shadow-sm">
           Instrumental in the app's successful deployment to the app markets,
           fortifying Coinlib's presence for cryptocurrency traders and
           enthusiasts.

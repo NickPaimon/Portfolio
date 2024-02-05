@@ -33,14 +33,14 @@ const Technical = () => {
   ];
 
   return (
-    <div className="bg-[#0f0e19] text-gray-800 md:p-8 sm:p-6 p-4 md:my-24 sm:my-18 my-12 rounded-md font-roboto ">
+    <div className="bg-[#0f0e19] text-gray-300 md:p-8 sm:p-6 p-4 md:my-24 sm:my-18 my-12 rounded-md font-roboto ">
       <h2 className="md:text-3xl sm:text-2xl text-xl text-center font-semibold mb-12">
         Technical Skills
       </h2>
       <p className="md:text-xl sm:text-lg text-base mb-12">
         {text.split(' ').map((word, index) =>
           keywords.includes(word) ? (
-            <span key={index} className="font-bold text-gray-600 shadow-sm">
+            <span key={index} className="font-bold text-gray-300 shadow-sm">
               {word + ' '}
             </span>
           ) : (
