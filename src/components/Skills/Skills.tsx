@@ -52,7 +52,7 @@ const Skills: React.FC = () => {
 
   return (
     <div
-      className="bg-gradient-to-b from-gray-900  to-black  text-white py-12 md:py-24 md:px-12 px-6 border-t border-b mb-[1px] border-gray-500"
+      className="bg-gradient-to-b from-gray-900  to-black  text-white py-12 md:py-24 md:px-12 px-6 border-t-b border-[#0f0e19] mb-[1px] "
       id="skills"
       ref={skillRef}
       style={{

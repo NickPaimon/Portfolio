@@ -14,18 +14,23 @@ const App: FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     window.history.pushState(null, '', '/Portfolio/');
-  }, []);
+  }, [loading]);
   return (
     <>
       <MyGlobalContext.Provider value={{ loading, setLoading }}>
-        <ParticlesContainer />
-        <Navbar />
-        <CustomLoader />
-        <Home />
-        <Skills />
-        <Projects />
-        <About />
-        <Footer />
+        {loading ? (
+          <CustomLoader />
+        ) : (
+          <div>
+            <ParticlesContainer />
+            <Navbar />
+            <Home />
+            <Skills />
+            <Projects />
+            <About />
+            <Footer />
+          </div>
+        )}
       </MyGlobalContext.Provider>
     </>
   );

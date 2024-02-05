@@ -14,9 +14,9 @@ const Projects: FC = () => {
           Latest projects
         </p>
         <ExperienceEnvestnet />
-        <hr className="border-t-2 border-blue-300 my-8 mx-auto w-3/4" />
+        <hr className="border-t-2 border-[#0f0e19] my-8 mx-auto w-3/4" />
         <ExperiencePicit />
-        <hr className="border-t-2 border-blue-300 my-8 mx-auto w-3/4" />
+        <hr className="border-t-2 border-[#0f0e19] my-8 mx-auto w-3/4" />
         <ExperienceCoinlib />
       </div>
     </div>

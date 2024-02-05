@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useLayoutEffect } from 'react';
 import '../index.css'; // Custom CSS for complex animations
 import { useGlobalContext } from '../GlobalContext';
 
@@ -11,7 +11,7 @@ const CustomLoader = () => {
     }, 3000);
   }, []);
 
-  return loading ? (
+  return (
     <div className="bg-gradient-to-br from-gray-700 to-gray-800  h-screen overflow-hidden flex justify-center items-center z-40">
       <div className="body">
         <span>
@@ -36,8 +36,6 @@ const CustomLoader = () => {
         Redirecting
       </h1>
     </div>
-  ) : (
-    ''
   );
 };
 

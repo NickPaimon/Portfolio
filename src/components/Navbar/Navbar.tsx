@@ -5,7 +5,10 @@ import { useGlobalContext } from '../../GlobalContext';
 const Navbar: FC = () => {
   const { loading } = useGlobalContext();
   return !loading ? (
-    <nav className="fixed w-full bg-gradient-to-br from-gray-700 via-gray-900 to-black text-black shadow-lg backdrop-filter z-10">
+    <nav
+      className="fixed w-full bg-gradient-to-br from-gray-700 via-gray-900 to-black text-black shadow-lg backdrop-filter z-10"
+      id={'top'}
+    >
       <div>
         <div className="container mx-auto sm:px-6 py-3 flex justify-around items-center px-2 sm:text-sm text-xs z-40">
           <div
@@ -15,7 +18,7 @@ const Navbar: FC = () => {
             <img
               src={`${process.env.REACT_APP_BASE_URL}/assets/logo.png`}
               alt="Logo"
-              className="z-20 align-middle w-full transition duration-300 ease-in-out hover:shadow-lg"
+              className="z-20 align-middle w-full"
             />{' '}
           </div>
           <div className="flex">
